@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Accordion.css";
 
 const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Automatically open all accordions on mobile view
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      setIsOpen(true); // Open all on mobile
+    }
+  }, []);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);

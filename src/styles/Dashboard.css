@@ -31,7 +31,7 @@
 @media (max-width: 768px) {
   .explore-fly-fishing-section {
     flex-direction: column;
-    padding-top: 150px;
+    padding: 20px 0;
   }
 
   .flying-fish-image {
@@ -43,6 +43,15 @@
   .explore-fly-fishing-heading {
     font-size: 40px;
     line-height: 45px;
+    padding: 0 20px;
+  }
+
+  .explore-fly-fishing-content {
+    padding: 0 20px;
+  }
+
+  .get-started-button {
+    margin: 0 20px;
   }
 }
 
@@ -79,6 +88,7 @@
 .featured-content-title {
   font-size: 32px;
   font-weight: 600;
+  margin: 10px 0px;
   color: var(--text-color-primary);
 }
 
@@ -90,18 +100,19 @@
 
 /* Mobile view */
 @media (max-width: 768px) {
+  .featured-section {
+    padding: 24px 20px;
+  }
+
   .card-container {
     flex-direction: column;
     align-items: flex-start;
+    background-color: #fff;
+    padding: 10px 20px;
   }
 
   .featured-image {
     display: none;
-  }
-
-  .content-container p {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
   }
 }
 

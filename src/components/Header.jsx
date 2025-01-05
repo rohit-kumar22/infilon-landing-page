@@ -14,7 +14,11 @@ const Header = () => {
   return (
     <div className="container">
       <div className="about">
-        <img className="logo" src={theme === "light" ? Logo_lite : Logo_dark} />
+        <img
+          className="logo"
+          src={theme === "light" ? Logo_lite : Logo_dark}
+          alt="fish-logo"
+        />
         <p className="title">Central Texas fly fishing</p>
       </div>
       <div className="menu-items">

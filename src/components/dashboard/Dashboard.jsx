@@ -19,12 +19,14 @@ const Dashboard = () => {
             At lacus vitae nulla sagittis scelerisque nisl. Pellentesque duis
             cursus vestibulum, facilisi ac, sed faucibus.
           </p>
-          <Button
-            text="Get Started"
-            variant="primary"
-            size="medium"
-            onClick={handleGetStarted}
-          />
+          <div className="get-started-button">
+            <Button
+              text="Get Started"
+              variant="primary"
+              size="medium"
+              onClick={handleGetStarted}
+            />
+          </div>
         </div>
         <img className="flying-fish-image" src={Flying_fish} alt="fishing" />
       </div>
