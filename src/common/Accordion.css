@@ -1,0 +1,58 @@
+/* Default styles for the accordion */
+.accordion {
+  margin: 10px 0;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color-primary);
+  border-bottom: 2px solid transparent;
+  transition: background-color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 1px solid var(--text-color-secondary);
+}
+
+.accordion-title {
+  margin: 0;
+  color: var(--text-color-primary);
+}
+
+.accordion-arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* Mobile styles (max-width: 768px) */
+@media (max-width: 768px) {
+  .accordion-header {
+    flex-direction: column; /* Stack the header items vertically on mobile */
+    align-items: flex-start; /* Align the title and arrow to the left */
+  }
+
+  .accordion-arrow {
+    display: none; /* Hide the arrow on mobile */
+  }
+
+  .accordion-content {
+    margin-top: 10px; /* Add margin to the content */
+  }
+
+  .accordion-title {
+    font-size: 18px;
+    margin-bottom: 8px; /* Add space between the title and content */
+  }
+
+  .accordion-header:hover {
+    background-color: #f1f1f1; /* Keep the hover effect for mobile */
+    border-bottom: 2px solid transparent; /* No underline for hover */
+  }
+}

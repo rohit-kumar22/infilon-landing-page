@@ -1,0 +1,185 @@
+.explore-fly-fishing-section {
+  padding: 80px 10%;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-fly-fishing-heading {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 63px;
+  font-family: Inter;
+  margin: 0;
+  color: var(--text-color-primary);
+}
+
+.explore-fly-fishing-content {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: Inter;
+  color: var(--text-color-secondary);
+}
+
+.flying-fish-image {
+  width: 600px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .explore-fly-fishing-section {
+    flex-direction: column;
+    padding-top: 150px;
+  }
+
+  .flying-fish-image {
+    order: -1;
+    width: 100%;
+    height: 300px;
+  }
+
+  .explore-fly-fishing-heading {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.featured-section {
+  background-color: var(--background-color-secondary);
+  padding: 24px 10%;
+}
+
+.featured-heading {
+  font-size: 48px;
+  line-height: 54px;
+  font-weight: 600;
+  color: var(--text-color-primary);
+}
+
+.featured-image {
+  width: 400px;
+  height: 220px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.featured-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.featured-content-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-color-primary);
+}
+
+.featured-content {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featured-image {
+    display: none;
+  }
+
+  .content-container p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+}
+
+.story-container {
+  background-color: var(--background);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.story-section {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.story-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.story-title {
+  font-size: 32px;
+  font-family: Gluten;
+  font-weight: 400;
+  color: var(--text-color-primary);
+}
+
+.story-content {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .story-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .story-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .story-image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .story-content {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+    flex: 1;
+  }
+
+  .story-section > * {
+    order: 1;
+  }
+
+  .story-title {
+    order: 0;
+  }
+
+  .story-button {
+    order: 2;
+    margin-top: 10px;
+  }
+}
+
+.story-container {
+  padding: 24px 10%;
+}

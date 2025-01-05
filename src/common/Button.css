@@ -1,0 +1,72 @@
+/* Base Button Styles */
+.btn {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Variants */
+.btn-primary {
+  background-color: var(--button-background-primary-lite);
+  color: var(--button-text-primary-lite);
+}
+
+.btn-primary:hover {
+  background-color: var(--button-background-primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--button-background-secondary-lite);
+  color: var(--button-text-secondary-lite);
+}
+
+.btn-secondary:hover {
+  background-color: var(--button-background-primary-lite);
+  color: var(--button-text-primary-lite);
+}
+
+.btn-danger {
+  background-color: var(--button-background-primary-dark);
+  color: var(--button-text-primary-dark);
+}
+
+.btn-danger:hover {
+  background-color: var(--text-color-primary-dark);
+}
+
+.btn-success {
+  background-color: var(--button-background-primary-lite);
+  color: var(--button-text-secondary-lite);
+}
+
+.btn-success:hover {
+  background-color: var(--button-background-primary-dark);
+  color: var(--button-text-primary-dark);
+}
+
+/* Sizes */
+.btn-small {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.btn-medium {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.btn-large {
+  font-size: 20px;
+  padding: 15px 30px;
+}
+
+/* Disabled State */
+.btn:disabled {
+  background-color: var(--text-color-secondary-lite);
+  color: var(--text-color-secondary-dark);
+  cursor: not-allowed;
+}
