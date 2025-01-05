@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/infilon-landing-page/static/css/main.f9b6664b.css",
-    "main.js": "/infilon-landing-page/static/js/main.4466378d.js",
+    "main.css": "/infilon-landing-page/static/css/main.fada9a44.css",
+    "main.js": "/infilon-landing-page/static/js/main.27b98c8e.js",
     "static/js/488.9b5dfa66.chunk.js": "/infilon-landing-page/static/js/488.9b5dfa66.chunk.js",
     "static/media/Flying_fish.jpg": "/infilon-landing-page/static/media/Flying_fish.b3dd7e0137082aa81105.jpg",
     "static/media/Logo_lite.svg": "/infilon-landing-page/static/media/Logo_lite.865146a6026973ef60764aeb7bb4c457.svg",
@@ -16,12 +16,12 @@
     "static/media/Arrow_white.svg": "/infilon-landing-page/static/media/Arrow_white.5d6b52e6a42b35d350c19e2aa0e6702c.svg",
     "static/media/Arrow_black.svg": "/infilon-landing-page/static/media/Arrow_black.27d8f987040816c4563c51cbff78d055.svg",
     "index.html": "/infilon-landing-page/index.html",
-    "main.f9b6664b.css.map": "/infilon-landing-page/static/css/main.f9b6664b.css.map",
-    "main.4466378d.js.map": "/infilon-landing-page/static/js/main.4466378d.js.map",
+    "main.fada9a44.css.map": "/infilon-landing-page/static/css/main.fada9a44.css.map",
+    "main.27b98c8e.js.map": "/infilon-landing-page/static/js/main.27b98c8e.js.map",
     "488.9b5dfa66.chunk.js.map": "/infilon-landing-page/static/js/488.9b5dfa66.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9b6664b.css",
-    "static/js/main.4466378d.js"
+    "static/css/main.fada9a44.css",
+    "static/js/main.27b98c8e.js"
   ]
 }
