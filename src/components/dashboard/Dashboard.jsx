@@ -82,25 +82,24 @@ const Dashboard = () => {
         <p className="featured-heading">Member Stories</p>
         <div className="grid-container">
           {stories.map((story) => (
-            <div className="grid-item">
-              <div className="story-section">
-                <div className="story-image">
-                  <img
-                    className="story-image"
-                    src={story.link}
-                    alt={story.image}
-                  />
-                </div>
-                <div>
-                  <p className="story-title">{story.title}</p>
-                  <p className="story-content">{story.content}</p>
-                  <Button
-                    text="Read More"
-                    variant="secondary"
-                    size="medium"
-                    onClick={handleGetStarted}
-                  />
-                </div>
+            <div className="story-section">
+              <div className="story-image box box1">
+                <img
+                  className="story-image"
+                  src={story.link}
+                  alt={story.image}
+                />
+              </div>
+
+              <p className="story-title box box2">{story.title}</p>
+              <p className="story-content box box3">{story.content}</p>
+              <div className="box box4">
+                <Button
+                  text="Read More"
+                  variant="secondary"
+                  size="medium"
+                  onClick={handleGetStarted}
+                />
               </div>
             </div>
           ))}

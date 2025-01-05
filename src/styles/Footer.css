@@ -58,6 +58,7 @@
   font-weight: 400;
   color: #aeadaa;
   text-align: center;
+  padding-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -70,9 +71,11 @@
   }
   .logo {
     text-align: center;
+    width: 100px;
   }
   .links {
     justify-content: center;
+    padding-top: 0;
   }
   .rightSection {
     justify-content: center;
