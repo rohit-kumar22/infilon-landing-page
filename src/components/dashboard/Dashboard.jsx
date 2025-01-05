@@ -5,9 +5,12 @@ import Flying_fish from "../../assets/Flying_fish.jpg";
 import Accordion from "../../common/Accordion";
 import { featured_cards } from "../../assets/json/featured";
 import { stories } from "../../assets/json/story";
+import { useViewport } from "../../context/ViewportContext";
 
 const Dashboard = () => {
   const handleGetStarted = () => {};
+  const { isMobile } = useViewport();
+  console.log("bjjkj", isMobile);
   return (
     <div className="stories-container">
       <div className="explore-fly-fishing-section">
@@ -41,15 +44,35 @@ const Dashboard = () => {
                 src={card.link}
                 alt={card.image}
               />
-              <div className="content-container">
+              <div
+                className="content-container"
+                style={
+                  isMobile
+                    ? {
+                        backgroundImage: `url(${card.link})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        height: "200px",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "flex-start",
+                        backgroundColor: `rgba(${(248, 247, 216, 0.7)})`,
+
+                        padding: "20px",
+                      }
+                    : {}
+                }
+              >
                 <p className="featured-content-title">{card.title}</p>
                 <p className="featured-content">{card.content}</p>
-                <Button
-                  text="Learn More"
-                  variant="secondary"
-                  size="medium"
-                  onClick={handleGetStarted}
-                />
+                <div className="learn-more-button">
+                  <Button
+                    text="Learn More"
+                    variant="secondary"
+                    size="medium"
+                    onClick={handleGetStarted}
+                  />
+                </div>
               </div>
             </div>
           </Accordion>

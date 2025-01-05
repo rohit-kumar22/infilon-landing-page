@@ -5,6 +5,7 @@ import Logo_dark from "../assets/Logo_dark.svg";
 import Theme_icon_lite from "../assets/Theme_icon_lite.svg";
 import Theme_icon_dark from "../assets/Theme_icon_dark.svg";
 import Hamburger_icon from "../assets/Hamburger_icon.svg";
+import Hamburger_icon_dark from "../assets/Hamburger_icon_dark.svg";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Header = () => {
@@ -30,7 +31,7 @@ const Header = () => {
         <div style={{ display: "flex", gap: "20px" }}>
           <img
             className="hamburger-icon"
-            src={Hamburger_icon}
+            src={theme === "light" ? Hamburger_icon : Hamburger_icon_dark}
             alt="Hamburger Icon"
           />
           <img
