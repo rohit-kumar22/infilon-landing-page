@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/infilon-landing-page/static/css/main.47a59dde.css",
+    "main.js": "/infilon-landing-page/static/js/main.0dc29144.js",
+    "static/js/488.9b5dfa66.chunk.js": "/infilon-landing-page/static/js/488.9b5dfa66.chunk.js",
+    "static/media/Flying_fish.jpg": "/infilon-landing-page/static/media/Flying_fish.b3dd7e0137082aa81105.jpg",
+    "static/media/Logo_lite.svg": "/infilon-landing-page/static/media/Logo_lite.865146a6026973ef60764aeb7bb4c457.svg",
+    "static/media/Logo_dark.svg": "/infilon-landing-page/static/media/Logo_dark.433dc445ac3dfdb5c7fcba1a75158e83.svg",
+    "static/media/Theme_icon_dark.svg": "/infilon-landing-page/static/media/Theme_icon_dark.5ad51c1d327f3bffc060ee740430fd38.svg",
+    "static/media/Theme_icon_lite.svg": "/infilon-landing-page/static/media/Theme_icon_lite.7ee246b49542ee8340d610d262deea0f.svg",
+    "static/media/LinkedIn_icon.svg": "/infilon-landing-page/static/media/LinkedIn_icon.c2d20187e40b2eeb1720abdd758494e9.svg",
+    "static/media/Facebook_icon.svg": "/infilon-landing-page/static/media/Facebook_icon.be25c2563d62fa314e653ff98b2e4137.svg",
+    "static/media/Instagram_icon.svg": "/infilon-landing-page/static/media/Instagram_icon.66df5c26ad024eb937a60e491b7d8ed2.svg",
+    "static/media/Hamburger_icon.svg": "/infilon-landing-page/static/media/Hamburger_icon.d58b9a437e97ee467acbcf79932ace46.svg",
+    "index.html": "/infilon-landing-page/index.html",
+    "main.47a59dde.css.map": "/infilon-landing-page/static/css/main.47a59dde.css.map",
+    "main.0dc29144.js.map": "/infilon-landing-page/static/js/main.0dc29144.js.map",
+    "488.9b5dfa66.chunk.js.map": "/infilon-landing-page/static/js/488.9b5dfa66.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47a59dde.css",
+    "static/js/main.0dc29144.js"
+  ]
+}
