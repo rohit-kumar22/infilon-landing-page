@@ -6,6 +6,7 @@ const themes = {
   light: {
     background: "--background-color-light",
     backgroundSecondary: "--background-color-secondary-light",
+    footerBackground: "--footer-background-lite",
     textPrimary: "--text-color-primary-lite",
     textSecondary: "--text-color-secondary-lite",
     title: "--title-color-light",
@@ -17,6 +18,7 @@ const themes = {
   dark: {
     background: "--background-color-dark",
     backgroundSecondary: "--background-color-secondary-dark",
+    footerBackground: "--footer-background-dark",
     textPrimary: "--text-color-primary-dark",
     textSecondary: "--text-color-secondary-dark",
     title: "--title-color-dark",
@@ -47,6 +49,10 @@ export const ThemeProvider = ({ children }) => {
     root.style.setProperty(
       "--background-color-secondary",
       `var(${themeColors.backgroundSecondary})`
+    );
+    root.style.setProperty(
+      "--footer-background",
+      `var(${themeColors.footerBackground})`
     );
     root.style.setProperty(
       "--text-color-primary",

@@ -1,6 +1,7 @@
 :root {
   --background-color-light: #ffffff;
   --background-color-secondary-light: #f1ece1;
+  --footer-background-lite: #1c1812;
 
   --text-color-primary-lite: #1c1812;
   --text-color-secondary-lite: #65625e;
@@ -12,6 +13,7 @@
 
   --background-color-dark: #1c1812;
   --background-color-secondary-dark: #34312b;
+  --footer-background-dark: #34312b;
   --text-color-primary-dark: #f7f7f6;
   --text-color-secondary-dark: #aeadaa;
   --title-color-dark: #ddcfb4;

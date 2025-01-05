@@ -57,7 +57,6 @@ const Dashboard = () => {
                         flexDirection: "column",
                         justifyContent: "flex-start",
                         backgroundColor: `rgba(${(248, 247, 216, 0.7)})`,
-
                         padding: "20px",
                       }
                     : {}
@@ -85,11 +84,13 @@ const Dashboard = () => {
           {stories.map((story) => (
             <div className="grid-item">
               <div className="story-section">
-                <img
-                  className="story-image"
-                  src={story.link}
-                  alt={story.image}
-                />
+                <div className="story-image">
+                  <img
+                    className="story-image"
+                    src={story.link}
+                    alt={story.image}
+                  />
+                </div>
                 <div>
                   <p className="story-title">{story.title}</p>
                   <p className="story-content">{story.content}</p>

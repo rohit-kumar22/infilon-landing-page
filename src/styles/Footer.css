@@ -1,5 +1,5 @@
 .footer {
-  background-color: #000;
+  background-color: var(--footer-background);
   padding: 10px 10%;
   margin-top: 50px;
 }
@@ -46,7 +46,7 @@
 }
 
 .socialIcons a {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .socialIcons svg {
   height: 24px;

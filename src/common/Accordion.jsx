@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Accordion.css";
 import { useViewport } from "../context/ViewportContext";
+import Arrow_white from "../assets/Arrow_white.svg";
+import Arrow_black from "../assets/Arrow_black.svg";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { isMobile } = useViewport();
+  const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     if (isMobile) {
@@ -21,7 +25,14 @@ const Accordion = ({ title, children }) => {
       <div className="accordion-header" onClick={toggleAccordion}>
         <span className="accordion-title">{title}</span>
         <span className={`accordion-arrow ${isOpen ? "open" : ""}`}>
-          {isOpen ? "^" : ""}
+          <img
+            style={{
+              transform: isOpen ? "rotate(2deg)" : "rotate(0deg)",
+              transition: "transform 0.3s ease-in-out",
+            }}
+            src={theme === "light" ? Arrow_black : Arrow_white}
+            alt="arrow"
+          />
         </span>
       </div>
       {isOpen && <div className="accordion-content">{children}</div>}
