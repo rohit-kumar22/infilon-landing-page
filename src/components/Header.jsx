@@ -23,12 +23,18 @@ const Header = () => {
         <p className="title">Central Texas fly fishing</p>
       </div>
       <div className="menu-items">
-        {menuItems.map((item, index) => (
-          <a key={index} href={`#${item.toLowerCase()}`} className="menu-link">
-            {item}
-          </a>
-        ))}
-        <div style={{ display: "flex", gap: "20px" }}>
+        <div className="link-items">
+          {menuItems.map((item, index) => (
+            <a
+              key={index}
+              href={`#${item.toLowerCase()}`}
+              className="menu-link"
+            >
+              {item}
+            </a>
+          ))}
+        </div>
+        <div style={{ display: "flex", gap: "40px" }}>
           <img
             className="hamburger-icon"
             src={theme === "light" ? Hamburger_icon : Hamburger_icon_dark}

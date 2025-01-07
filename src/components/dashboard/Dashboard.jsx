@@ -14,7 +14,7 @@ const Dashboard = () => {
   return (
     <div className="stories-container">
       <div className="explore-fly-fishing-section">
-        <div>
+        <div className="explore-fly-fishing-left">
           <p className="explore-fly-fishing-heading">
             Central Texas <br /> Fly Fishing
           </p>
@@ -31,6 +31,7 @@ const Dashboard = () => {
             />
           </div>
         </div>
+
         <img className="flying-fish-image" src={Flying_fish} alt="fishing" />
       </div>
       {/* Featured Section */}

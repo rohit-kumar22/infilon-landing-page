@@ -1,9 +1,11 @@
 .explore-fly-fishing-section {
-  padding: 80px 10%;
+  padding: 80px 24px;
   display: flex;
   gap: 24px;
-  justify-content: center;
-  align-items: center;
+}
+
+.explore-fly-fishing-left {
+  flex: 6;
 }
 
 .explore-fly-fishing-heading {
@@ -24,14 +26,20 @@
 }
 
 .flying-fish-image {
-  width: 600px;
+  flex: 4;
+  width: 100%;
   height: 300px;
 }
 
 @media (max-width: 768px) {
   .explore-fly-fishing-section {
     flex-direction: column;
-    padding: 20px 0;
+    padding: 0;
+  }
+
+  .explore-fly-fishing-left {
+    padding: 40px 24px;
+    gap: 16px;
   }
 
   .flying-fish-image {
