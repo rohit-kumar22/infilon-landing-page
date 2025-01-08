@@ -65,7 +65,7 @@
 
 .featured-section {
   background-color: var(--background-color-secondary);
-  padding: 24px 10%;
+  padding: 80px 24px;
 }
 
 .featured-heading {
@@ -73,6 +73,7 @@
   line-height: 54px;
   font-weight: 600;
   color: var(--text-color-primary);
+  margin: 0;
 }
 
 .featured-image {

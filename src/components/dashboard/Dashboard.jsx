@@ -50,14 +50,14 @@ const Dashboard = () => {
                 style={
                   isMobile
                     ? {
-                        backgroundImage: `url(${card.link})`,
+                        backgroundImage: `linear-gradient(rgba(255, 255, 0, 0.3), rgba(255, 255, 0, 0.3)), url(${card.link})`,
+                        backgroundColor: "#EFE8DB", // Approximate beige color
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         height: "200px",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "flex-start",
-                        backgroundColor: `rgba(${(248, 247, 216, 0.7)})`,
                         padding: "20px",
                       }
                     : {}

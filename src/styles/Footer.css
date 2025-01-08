@@ -1,30 +1,28 @@
 .footer {
   background-color: var(--footer-background);
-  padding: 10px 10%;
-  margin-top: 50px;
+  padding: 24px;
 }
 
 .footerContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
-  gap: 10px;
 }
 
 .leftSection {
   display: flex;
-  gap: 10px;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .logo {
-  height: 50px;
-  margin-right: 20px;
+  width: 71.63px;
+  height: 40px;
 }
 
 .links {
   display: flex;
-  padding-top: 10px;
+  gap: 24px;
 }
 
 .links a {
@@ -39,18 +37,12 @@
 .rightSection {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
-.socialIcons {
-  display: flex;
-}
-
-.socialIcons a {
-  margin-left: 20px;
-}
-.socialIcons svg {
-  height: 24px;
+.icon {
   width: 24px;
+  height: 24px;
 }
 
 .copyright {
@@ -58,7 +50,7 @@
   font-weight: 400;
   color: #aeadaa;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 36px;
 }
 
 @media (max-width: 768px) {
@@ -80,5 +72,9 @@
   .rightSection {
     justify-content: center;
     padding-top: 20px;
+  }
+  .copyright {
+    padding-top: 36px;
+    margin: 0;
   }
 }

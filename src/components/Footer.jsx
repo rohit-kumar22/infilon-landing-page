@@ -26,17 +26,15 @@ const Footer = () => {
           </div>
         </div>
         <div className="rightSection">
-          <div className="socialIcons">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={Facebook_icon} alt="facebook" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={Instagram_icon} alt="instagram" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={LinkedIn_icon} alt="linkedin" />
-            </a>
-          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img className="icon" src={Facebook_icon} alt="facebook" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img className="icon" src={Instagram_icon} alt="instagram" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img className="icon" src={LinkedIn_icon} alt="linkedin" />
+          </a>
         </div>
       </div>
       <div>
