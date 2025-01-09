@@ -27,7 +27,7 @@ const Accordion = ({ title, children }) => {
         <span className={`accordion-arrow ${isOpen ? "open" : ""}`}>
           <img
             style={{
-              transform: isOpen ? "rotate(2deg)" : "rotate(0deg)",
+              transform: isOpen ? "rotate(180deg)" : "rotate(180deg)",
               transition: "transform 0.3s ease-in-out",
             }}
             src={theme === "light" ? Arrow_black : Arrow_white}

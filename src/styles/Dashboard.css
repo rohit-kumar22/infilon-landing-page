@@ -83,8 +83,7 @@
 
 .card-container {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  gap: 32px;
   align-items: center;
 }
 
@@ -131,11 +130,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
+  padding-top: 20px;
 }
 
 .story-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 220px 1fr;
   align-items: start;
   width: 100%;
 }
@@ -144,7 +144,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -155,6 +154,7 @@
 .box1 {
   grid-row: span 3;
   justify-content: flex-start;
+  width: 200px;
 }
 
 .box2 {
@@ -174,7 +174,7 @@
 .story-image {
   width: 200px;
   height: 200px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .story-title {
@@ -185,7 +185,6 @@
   text-align: left;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
   color: var(--text-color-primary);
 }
 
@@ -200,7 +199,7 @@
 }
 
 .story-container {
-  padding: 24px 10%;
+  padding: 80px 24px;
 }
 
 .story-title-main {
@@ -215,25 +214,21 @@
   .story-container {
     padding: 24px 20px;
   }
-  .featured-heading {
-    border-bottom: 1px solid var(--text-color-secondary);
-    padding-bottom: 10px;
-  }
 
   .story-section {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--text-color-secondary);
   }
 
   .story-title {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 10px 0;
     text-align: left;
   }
 
   .story-image {
-    width: 100%;
-    height: 150px;
-    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
     padding: 0;
   }
 
@@ -251,7 +246,7 @@
     flex: 0 0 100%;
     order: 1;
     justify-content: flex-start;
-    padding-left: 60px;
+    padding-left: 20px;
   }
 
   .box1,
@@ -262,19 +257,19 @@
   }
 
   .box1 {
+    flex: 0 0 100px;
     align-self: flex-start;
     padding-left: 20px;
   }
 
   .box3 {
     align-self: flex-start;
-    padding-top: 20px;
   }
 
   .box4 {
     flex: 0 0 100%;
     order: 3;
     padding: 0 0 20px 0;
-    margin-left: 60px;
+    margin-left: 20px;
   }
 }
